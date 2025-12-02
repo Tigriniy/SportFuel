@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SportFuel — Интернет-магазин спортивного питания</title>
+	<link rel="stylesheet" href="assets/css/header-footer.css">
+	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<div class="header">
+			<div class="header_left">
+			<a href="index.html" class="header_logo">
+				<img src="assets/images/systemImg/logo.svg" alt="SportFuel">
+			</a>
+
+			<!-- СКРЫТЫЙ ЧЕКБОКС -->
+			<input type="checkbox" id="burger" class="header_burger-checkbox">
+
+			<!-- ОВЕРЛЕЙ ДЛЯ ЗАКРЫТИЯ ПО КЛИКУ -->
+			<label for="burger" class="header_overlay"></label>
+
+			<!-- КНОПКА БУРГЕРА / КРЕСТИКА -->
+			<label for="burger" class="header_burger-button">
+				<span class="header_burger-line header_burger-line--1"></span>
+				<span class="header_burger-line header_burger-line--2"></span>
+				<span class="header_burger-line header_burger-line--3"></span>
+			</label>
+
+			<!-- МОБИЛЬНОЕ МЕНЮ -->
+			<div class="header_mobile-menu">
+				<div class="header_mobile-menu-inner">
+				<a href="index.html" class="header_mobile-link">
+					<img src="assets/images/systemImg/home.svg" alt="Главная">
+					<span>Главная</span>
+				</a>
+				<a href="katalog.html" class="header_mobile-link">
+					<img src="assets/images/systemImg/list.svg" alt="Каталог">
+					<span>Каталог</span>
+				</a>
+				<a href="payment_and_delivery.html" class="header_mobile-link">
+					<img src="assets/images/systemImg/truck.svg" alt="Доставка">
+					<span>Доставка</span>
+				</a>
+				<a href="order.html" class="header_mobile-link">
+					<img src="assets/images/systemImg/phone.svg" alt="Контакты">
+					<span>Контакты</span>
+				</a>
+
+				<div class="header_mobile-controls">
+					<div class="header_mobile-search">
+					<input type="text" placeholder="Поиск...">
+					<img src="assets/images/systemImg/search.svg" alt="Поиск">
+					</div>
+
+					<div class="header_mobile-icons">
+					<a href="reg-in.html" class="header_mobile-icon-link">
+						<img src="assets/images/systemImg/profile.svg" alt="Профиль">
+					</a>
+					<a href="favorite.html" class="header_mobile-icon-link">
+						<img src="assets/images/systemImg/favorite.svg" alt="Избранное">
+					</a>
+					<a href="cart.html" class="header_mobile-icon-link">
+						<img src="assets/images/systemImg/cart.svg" alt="Корзина">
+					</a>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+
+			<!-- ОСНОВНОЕ МЕНЮ (скрывается в адаптиве) -->
+			<div class="header_right">
+			<a href="index.html">Главная</a>
+			<a href="katalog.html">Каталог</a>
+			<a href="payment_and_delivery.html">Доставка</a>
+			<a href="order.html">Контакты</a>
+			<div class="header_right_search_cont">
+				<input type="text" placeholder="Поиск">
+				<img src="assets/images/systemImg/search.svg" alt="Поиск">
+			</div>
+			<a href="reg-in.html">
+				<img src="assets/images/systemImg/profile.svg" alt="Профиль">
+			</a>
+			<a href="favorite.html">
+				<img src="assets/images/systemImg/favorite.svg" alt="Избранное">
+			</a>
+			<a href="cart.html">
+				<img src="assets/images/systemImg/cart.svg" alt="Корзина">
+			</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="header_mobile-menu">
+		<a href="index.html">Главная</a>
+		<a href="katalog.html">Каталог</a>
+		<a href="payment_and_delivery.html">Доставка</a>
+		<a href="order.html">Контакты</a>
+
+		<div class="header_mobile-controls">
+			<div class="header_mobile-search">
+			<input type="text" placeholder="Поиск">
+			<img src="assets/images/systemImg/search.svg" alt="Поиск">
+			</div>
+
+			<div class="header_mobile-icons">
+			<a href="reg-in.html">
+				<img src="assets/images/systemImg/profile.svg" alt="Профиль">
+			</a>
+			<a href="favorite.html">
+				<img src="assets/images/systemImg/favorite.svg" alt="Избранное">
+			</a>
+			<a href="cart.html">
+				<img src="assets/images/systemImg/cart.svg" alt="Корзина">
+			</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<content>
+		<div class="main_content_container">
+			<div class="main_content_container_block_1">
+				<div class="main_content_container_block_1_left">
+					<div class="main_content_container_block_1_text-group">
+						<h2>МОТИВИРУЙТЕ НА ЗДОРОВЫЙ ОБРАЗ ЖИЗНИ! СЕРТИФИКАТ ДЛЯ ЛЮБИТЕЛЕЙ ФИТНЕСА</h2>
+						<p>Подарите силу, энергию и возможность достичь новых вершин</p>
+					</div>
+					<button class="main_content_container_block_1_button">
+						Дарить просто
+					</button>
+				</div>
+				<div class="main_content_container_block_1_right">
+					<img src="assets/images/systemImg/Банер_ДляГлавнойСтраницы 1.png" alt="Баннер">
+				</div>
+			</div>
+
+			<div class="main_content_container_optional_block_2">
+				<div class="optional_block">
+					<img src="assets/images/systemImg/arm.svg" alt="Набор массы">
+					<p>НАБЕРИ МЫШЕЧНУЮ МАССУ БЫСТРЕЕ</p>
+				</div>
+				<div class="optional_block">
+					<img src="assets/images/systemImg/fire.svg" alt="Сжигание жира">
+					<p>ИЗБАВЬСЯ ОТ ЛИШНЕГО И ОБРЕТИ ФОРМУ</p>
+				</div>
+				<div class="optional_block">
+					<img src="assets/images/systemImg/shield.svg" alt="Иммунитет">
+					<p>УКРЕПИ СВОЙ ИММУНИТЕТ НА ДОЛГИЕ ГОДЫ</p>
+				</div>
+				<div class="optional_block">
+					<img src="assets/images/systemImg/lightning.svg" alt="Энергия">
+					<p>МАКСИМУМ ЭНЕРГИИ ДЛЯ ТВОИХ ЦЕЛЕЙ</p>
+				</div>	
+			</div>
+
+			<div class="categoria">
+				<h2>Новинки</h2>
+				<a href="katalog.html">Смотреть все →</a>
+			</div>
+
+			<!-- ==== КАРТОЧКИ ТОВАРОВ ==== -->
+			<div class="product_cart_cont">
+				<!-- Карточка 1 -->
+				<a href="carta-tovara.html" class="product_cart">
+					<div class="product_cart_content">
+						<div class="product_cart_new"><p>Новинка</p></div>
+						<button class="product_cart_favorite_but" onclick="event.stopPropagation(); toggleFavorite();">
+							<img src="assets/images/systemImg/heart_favoroite_button_for_cart.svg" alt="В избранное">
+						</button>
+						<img src="assets/images/product/BeFirst_Whey1.png" alt="Протеин BeFirst" class="product_cart_content_img">
+						<span class="product_background">
+							<img src="assets/images/systemImg/star.svg" alt="★">
+							<p>4.8</p>
+							<p2>(12 отзывов)</p2>
+						</span>
+						<p class="product_cart_content_desc">Протеин, 1000 гр.</p>
+						<p class="product_cart_content_brand">BeFirst</p>
+						<div class="product_cart_content_price">
+							<p>1830 руб.</p>
+							<button class="product_cart_content_price_but" onclick="event.stopPropagation(); addToCart();">
+								<img src="assets/images/systemImg/add_cart.svg" alt="Добавить в корзину">
+							</button>
+						</div>
+					</div>
+				</a>
+
+				<!-- Карточка 2 -->
+				<a href="carta-tovara.html" class="product_cart">
+					<div class="product_cart_content">
+						<div class="product_cart_new"><p>Новинка</p></div>
+						<button class="product_cart_favorite_but" onclick="event.stopPropagation(); toggleFavorite();">
+							<img src="assets/images/systemImg/heart_favoroite_button_for_cart.svg" alt="В избранное">
+						</button>
+						<img src="assets/images/product/BeFirst_Creatine2.png" alt="Протеин BeFirst" class="product_cart_content_img">
+						<span class="product_background">
+							<img src="assets/images/systemImg/star.svg" alt="★">
+							<p>4.8</p>
+							<p2>(12 отзывов)</p2>
+						</span>
+						<p class="product_cart_content_desc">Креатин, 200 гр.</p>
+						<p class="product_cart_content_brand">BeFirst</p>
+						<div class="product_cart_content_price">
+							<p>1360 руб.</p>
+							<button class="product_cart_content_price_but" onclick="event.stopPropagation(); addToCart();">
+								<img src="assets/images/systemImg/add_cart.svg" alt="Добавить в корзину">
+							</button>
+						</div>
+					</div>
+				</a>
+
+				<!-- Карточка 3 -->
+				<a href="carta-tovara.html" class="product_cart">
+					<div class="product_cart_content">
+						<div class="product_cart_new"><p>Новинка</p></div>
+						<button class="product_cart_favorite_but" onclick="event.stopPropagation(); toggleFavorite();">
+							<img src="assets/images/systemImg/heart_favoroite_button_for_cart.svg" alt="В избранное">
+						</button>
+						<img src="assets/images/product/OptimumNutrition_BCAA1.png" alt="Протеин BeFirst" class="product_cart_content_img">
+						<span class="product_background">
+							<img src="assets/images/systemImg/star.svg" alt="★">
+							<p>4.8</p>
+							<p2>(12 отзывов)</p2>
+						</span>
+						<p class="product_cart_content_desc">BCAA, 60 таб.</p>
+						<p class="product_cart_content_brand">OptimumNutrition</p>
+						<div class="product_cart_content_price">
+							<p>690 руб.</p>
+							<button class="product_cart_content_price_but" onclick="event.stopPropagation(); addToCart();">
+								<img src="assets/images/systemImg/add_cart.svg" alt="Добавить в корзину">
+							</button>
+						</div>
+					</div>
+				</a>
+
+				<!-- Карточка 4 -->
+				<a href="carta-tovara.html" class="product_cart">
+					<div class="product_cart_content">
+						<div class="product_cart_new"><p>Новинка</p></div>
+						<button class="product_cart_favorite_but" onclick="event.stopPropagation(); toggleFavorite();">
+							<img src="assets/images/systemImg/heart_favoroite_button_for_cart.svg" alt="В избранное">
+						</button>
+						<img src="assets/images/product/MaxlerVitamen_Витамины1.png" alt="Протеин BeFirst" class="product_cart_content_img">
+						<span class="product_background">
+							<img src="assets/images/systemImg/star.svg" alt="★">
+							<p>4.8</p>
+							<p2>(12 отзывов)</p2>
+						</span>
+						<p class="product_cart_content_desc">Витамины, 90 таб.</p>
+						<p class="product_cart_content_brand">Maxler</p>
+						<div class="product_cart_content_price">
+							<p>2160 руб.</p>
+							<button class="product_cart_content_price_but" onclick="event.stopPropagation(); addToCart();">
+								<img src="assets/images/systemImg/add_cart.svg" alt="Добавить в корзину">
+							</button>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="reviews">
+				<h2 class="reviews__title">Отзывы</h2>
+				<div class="reviews__container">
+					<div class="review">
+						<div class="review__avatar">
+							<img src="assets/images/systemImg/avatar-Maria-placeholder.jpeg" alt="Аватар Марии К.">
+						</div>
+						<div class="review__content">
+							<div class="review__stars">
+								<img src="assets/images/systemImg/star.svg" alt="★">
+								<img src="assets/images/systemImg/star.svg" alt="★">
+								<img src="assets/images/systemImg/star.svg" alt="★">
+								<img src="assets/images/systemImg/star.svg" alt="★">
+								<img src="assets/images/systemImg/star.svg" alt="★">
+							</div>
+							<h3 class="review__name">Мария К.</h3>
+							<p class="review__text">Заказываю здесь постоянно. Цены адекватные, ассортимент большой. Менеджеры помогли подобрать программу питания под мои цели</p>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__avatar">
+							<img src="assets/images/systemImg/avatar-Alexandr-placeholder.jpeg" alt="Аватар Александра М.">
+						</div>
+						<div class="review__content">
+							<div class="review__stars">
+								<img src="assets/images/systemImg/star.svg" alt="★">
+								<img src="assets/images/systemImg/star.svg" alt="★">
+								<img src="assets/images/systemImg/star.svg" alt="★">
+								<img src="assets/images/systemImg/star.svg" alt="★">
+								<img src="assets/images/systemImg/star.svg" alt="★">
+							</div>
+							<h3 class="review__name">Александр М.</h3>
+							<p class="review__text">Отличный магазин! Быстрая доставка, качественная продукция. Результаты заметны уже после первого месяца приема. Рекомендую!</p>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="reviews__link">Смотреть всё</a>
+			</div>
+		</div>
+	</content>
+
+	<footer>
+		<div class="footer">
+			<div class="footer_content_cont">
+				<div class="footer_block">
+					<div class="footer_block_logo">
+						<img src="assets/images/systemImg/logo.svg" alt="SportFuel">
+					</div>
+				</div>
+				<div class="footer_block">
+					<h2>Разделы сайта</h2>
+					<a href="index.html">Главная</a>
+					<a href="katalog.html">Каталог</a>
+					<a href="payment_and_delivery.html">Доставка</a>
+					<a href="order.html">Контакты</a>
+				</div>
+				<div class="footer_block">
+					<h2>Контактная информация</h2>
+					<a href="tel:+79402389143">Телефон: +7 (940) 238-91-43</a>
+					<a href="mailto:info@sportfuel.ru">Email: info@sportfuel.ru</a>
+					<a href="#">Мы в интернете</a>
+					<div class="footer_block_mi_v_inete">
+						<img src="assets/images/systemImg/Сферум_Logo.svg" alt="Сферум">
+						<img src="assets/images/systemImg/Max_logo.svg" alt="Max">
+						<img src="assets/images/systemImg/Rutube.svg" alt="Rutube">
+						<img src="assets/images/systemImg/VK_Logo 1.svg" alt="VK">
+					</div>
+				</div>
+				<div class="footer_block">
+					<h2>Подпишись на нашу рассылку</h2>
+					<div class="footer_block_input_follow">
+						<input type="email" placeholder="Электронная почта">
+						<button>Подписаться</button>
+					</div>
+					<p class="footer_block_input_follow_p">Ты всегда будешь в курсе новинок и выгодных предложений!</p>
+				</div>
+			</div>
+		</div>
+		<h2 class="footer_rules">©2025 SportFuel. Все права защищены.</h2>
+	</footer>
+
+
+</body>
+</html>

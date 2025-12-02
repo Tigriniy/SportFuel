@@ -1,0 +1,36 @@
+
+.favorite_block{
+	width: 100%;
+	height: 461px;
+	background-color: #1F1F1F;
+/*	border: 1px solid white;*/
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.favorite_block img{
+	width: 120px;
+	height: 106px;
+}
+.favorite_block h2{
+	font-size: 32px;
+	margin-top: 20px;
+}
+.favorite_block p{
+	font-size: 26px;
+	margin-top: 20px;
+}
+
+.favorite_block button{
+	background-color: #FF4F90;
+	width: 286px;
+	height: 60px;
+	border: none;
+	border-radius: 6px;
+	margin-top: 20px;
+	font-size: 26px;
+}
