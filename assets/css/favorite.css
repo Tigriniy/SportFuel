@@ -1,36 +1,139 @@
+/* ====================== СТРАНИЦА "ИЗБРАННОЕ" ====================== */
 
-.favorite_block{
-	width: 100%;
-	height: 461px;
-	background-color: #1F1F1F;
-/*	border: 1px solid white;*/
-	margin-top: 40px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.favorite_block {
+  width: 100%;
+  max-width: 800px; /* ограничим ширину на больших экранах */
+  min-height: 400px; /* вместо фиксированной высоты — минимум */
+  background-color: #1F1F1F;
+  margin: 40px auto 60px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-sizing: border-box;
 }
 
-
-.favorite_block img{
-	width: 120px;
-	height: 106px;
-}
-.favorite_block h2{
-	font-size: 32px;
-	margin-top: 20px;
-}
-.favorite_block p{
-	font-size: 26px;
-	margin-top: 20px;
+.favorite_block img {
+  width: 100px;
+  height: auto;
+  opacity: 0.8;
 }
 
-.favorite_block button{
-	background-color: #FF4F90;
-	width: 286px;
-	height: 60px;
-	border: none;
-	border-radius: 6px;
-	margin-top: 20px;
-	font-size: 26px;
+.favorite_block h2 {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  margin: 24px 0 12px 0;
+  text-align: center;
+}
+
+.favorite_block p {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #aaa;
+  margin: 0 0 24px 0;
+  text-align: center;
+  max-width: 90%;
+  line-height: 1.4;
+}
+
+.favorite_block button {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #FF4F90, #FE68A3);
+  color: white;
+  width: 260px;
+  height: 56px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  box-shadow: 0 4px 12px rgba(255, 79, 144, 0.2);
+}
+
+.favorite_block button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ====================== АДАПТИВНОСТЬ ====================== */
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+  .favorite_block {
+    margin: 30px auto;
+    padding: 30px 16px;
+    min-height: 350px;
+  }
+
+  .favorite_block h2 {
+    font-size: 28px;
+  }
+
+  .favorite_block p {
+    font-size: 18px;
+  }
+
+  .favorite_block button {
+    width: 240px;
+    height: 52px;
+    font-size: 18px;
+  }
+}
+
+/* Телефоны (до 768px) */
+@media (max-width: 768px) {
+  .favorite__block {
+    margin: 20px auto;
+    padding: 24px 16px;
+    min-height: 300px;
+  }
+
+  .favorite_block img {
+    width: 80px;
+  }
+
+  .favorite_block h2 {
+    font-size: 24px;
+    margin: 16px 0 10px 0;
+  }
+
+  .favorite_block p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .favorite_block button {
+    width: 100%;
+    max-width: 280px;
+    height: 50px;
+    font-size: 17px;
+  }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+  .favorite_block {
+    padding: 20px 12px;
+    min-height: 260px;
+  }
+
+  .favorite_block h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .favorite_block p {
+    font-size: 15px;
+  }
+
+  .favorite_block button {
+    height: 48px;
+    font-size: 16px;
+  }
 }
