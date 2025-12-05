@@ -13,294 +13,260 @@
 </head>
 <body>
 
+<!-- ========== HEADER (уже в БЭМ) ========== -->
+<header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">
+      <img src="assets/images/systemImg/logo.svg" alt="SportFuel">
+    </a>
 
-  <nav>
-		<div class="header">
-			<div class="header_left">
-			<a href="index.html" class="header_logo">
-				<img src="assets/images/systemImg/logo.svg" alt="SportFuel">
-			</a>
+    <input type="checkbox" id="burger" class="header__burger-checkbox">
+    <label for="burger" class="header__overlay"></label>
+    <label for="burger" class="header__burger-button">
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+    </label>
 
+    <nav class="header__nav">
+      <a href="index.html" class="header__nav-link">Главная</a>
+      <a href="katalog.html" class="header__nav-link">Каталог</a>
+      <a href="payment_and_delivery.html" class="header__nav-link">Доставка</a>
+      <a href="order.html" class="header__nav-link">Контакты</a>
 
-			<input type="checkbox" id="burger" class="header_burger-checkbox">
+      <div class="header__search">
+        <input type="text" placeholder="Поиск" class="header__search-input">
+        <img src="assets/images/systemImg/search.svg" alt="Поиск">
+      </div>
 
+      <a href="reg-in.html" class="header__icon-link">
+        <img src="assets/images/systemImg/profile.svg" alt="Профиль">
+      </a>
+      <a href="favorite.html" class="header__icon-link">
+        <img src="assets/images/systemImg/favorite.svg" alt="Избранное">
+      </a>
+      <a href="cart.html" class="header__icon-link">
+        <img src="assets/images/systemImg/cart.svg" alt="Корзина">
+      </a>
+    </nav>
 
-			<label for="burger" class="header_overlay"></label>
+    <div class="header__mobile-menu">
+      <div class="header__mobile-inner">
+        <a href="index.html" class="header__mobile-link">
+          <img src="assets/images/systemImg/home.svg" alt="Главная">
+          <span>Главная</span>
+        </a>
+        <a href="katalog.html" class="header__mobile-link">
+          <img src="assets/images/systemImg/list.svg" alt="Каталог">
+          <span>Каталог</span>
+        </a>
+        <a href="payment_and_delivery.html" class="header__mobile-link">
+          <img src="assets/images/systemImg/truck.svg" alt="Доставка">
+          <span>Доставка</span>
+        </a>
+        <a href="order.html" class="header__mobile-link">
+          <img src="assets/images/systemImg/phone.svg" alt="Контакты">
+          <span>Контакты</span>
+        </a>
 
-	
-			<label for="burger" class="header_burger-button">
-				<span class="header_burger-line header_burger-line--1"></span>
-				<span class="header_burger-line header_burger-line--2"></span>
-				<span class="header_burger-line header_burger-line--3"></span>
-			</label>
-
-
-			<div class="header_mobile-menu">
-				<div class="header_mobile-menu-inner">
-				<a href="index.html" class="header_mobile-link">
-					<img src="assets/images/systemImg/home.svg" alt="Главная">
-					<span>Главная</span>
-				</a>
-				<a href="katalog.html" class="header_mobile-link">
-					<img src="assets/images/systemImg/list.svg" alt="Каталог">
-					<span>Каталог</span>
-				</a>
-				<a href="payment_and_delivery.html" class="header_mobile-link">
-					<img src="assets/images/systemImg/truck.svg" alt="Доставка">
-					<span>Доставка</span>
-				</a>
-				<a href="order.html" class="header_mobile-link">
-					<img src="assets/images/systemImg/phone.svg" alt="Контакты">
-					<span>Контакты</span>
-				</a>
-
-				<div class="header_mobile-controls">
-					<div class="header_mobile-search">
-					<input type="text" placeholder="Поиск...">
-					<img src="assets/images/systemImg/search.svg" alt="Поиск">
-					</div>
-
-					<div class="header_mobile-icons">
-					<a href="reg-in.html" class="header_mobile-icon-link">
-						<img src="assets/images/systemImg/profile.svg" alt="Профиль">
-					</a>
-					<a href="favorite.html" class="header_mobile-icon-link">
-						<img src="assets/images/systemImg/favorite.svg" alt="Избранное">
-					</a>
-					<a href="cart.html" class="header_mobile-icon-link">
-						<img src="assets/images/systemImg/cart.svg" alt="Корзина">
-					</a>
-					</div>
-				</div>
-				</div>
-			</div>
-			</div>
-
-
-			<div class="header_right">
-			<a href="index.html">Главная</a>
-			<a href="katalog.html">Каталог</a>
-			<a href="payment_and_delivery.html">Доставка</a>
-			<a href="order.html">Контакты</a>
-			<div class="header_right_search_cont">
-				<input type="text" placeholder="Поиск">
-				<img src="assets/images/systemImg/search.svg" alt="Поиск">
-			</div>
-			<a href="reg-in.html">
-				<img src="assets/images/systemImg/profile.svg" alt="Профиль">
-			</a>
-			<a href="favorite.html">
-				<img src="assets/images/systemImg/favorite.svg" alt="Избранное">
-			</a>
-			<a href="cart.html">
-				<img src="assets/images/systemImg/cart.svg" alt="Корзина">
-			</a>
-			</div>
-		</div>
-	</nav>
-
-	<div class="header_mobile-menu">
-		<a href="index.html">Главная</a>
-		<a href="katalog.html">Каталог</a>
-		<a href="payment_and_delivery.html">Доставка</a>
-		<a href="order.html">Контакты</a>
-
-		<div class="header_mobile-controls">
-			<div class="header_mobile-search">
-			<input type="text" placeholder="Поиск">
-			<img src="assets/images/systemImg/search.svg" alt="Поиск">
-			</div>
-
-			<div class="header_mobile-icons">
-			<a href="reg-in.html">
-				<img src="assets/images/systemImg/profile.svg" alt="Профиль">
-			</a>
-			<a href="favorite.html">
-				<img src="assets/images/systemImg/favorite.svg" alt="Избранное">
-			</a>
-			<a href="cart.html">
-				<img src="assets/images/systemImg/cart.svg" alt="Корзина">
-			</a>
-			</div>
-		</div>
-	</div>
-
-
-  <main>
-    <div class="main_content_container">
-
-
-      <nav class="breadcrumbs">
-        <ol class="breadcrumbs__list">
-          <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="katalog.html">каталог</a></li>
-          <li class="breadcrumbs__item"><a href="#">BCAA</a></li>
-          <li class="breadcrumbs__item"><span class="breadcrumbs__current">Optimum Nutrition</span></li>
-        </ol>
-      </nav>
-
-
-      <div class="product-page">
-        <div class="product-page__container">
-
-
-          <div class="product-image">
-            <img src="assets/images/product/product-bcaa.png" alt="BCAA 5000 Powder от Optimum Nutrition">
+        <div class="header__mobile-controls">
+          <div class="header__mobile-search">
+            <input type="text" placeholder="Поиск...">
+            <img src="assets/images/systemImg/search.svg" alt="Поиск">
           </div>
+          <div class="header__mobile-icons">
+            <a href="reg-in.html" class="header__mobile-icon">
+              <img src="assets/images/systemImg/profile.svg" alt="Профиль">
+            </a>
+            <a href="favorite.html" class="header__mobile-icon">
+              <img src="assets/images/systemImg/favorite.svg" alt="Избранное">
+            </a>
+            <a href="cart.html" class="header__mobile-icon">
+              <img src="assets/images/systemImg/cart.svg" alt="Корзина">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
+<!-- ========== MAIN ========== -->
+<main class="product">
+  <div class="product__container">
+    <!-- Хлебные крошки -->
+    <nav class="breadcrumbs">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="katalog.html" class="breadcrumbs__link">Каталог</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">BCAA</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__current">Optimum Nutrition</span>
+        </li>
+      </ol>
+    </nav>
 
-          <div class="product-info">
-            <div class="product-info__top">
-              <span class="product-info__sku">Артикул: 0043194</span>
-              <h1 class="product-info__title">BCAA 5000 - 400 КАПС</h1>
-              <div class="product-info__rating">
-                <div class="product-info__stars">
-                  <img src="assets/images/systemImg/star.svg" alt="★">
-                  <img src="assets/images/systemImg/star.svg" alt="★">
-                  <img src="assets/images/systemImg/star.svg" alt="★">
-                  <img src="assets/images/systemImg/star.svg" alt="★">
-                  <img src="assets/images/systemImg/star.svg" alt="★">
-                </div>
-                <span class="product-info__rating-value">4.8</span>
-                <span class="product-info__rating-count">(12 отзывов)</span>
-              </div>
-              <div class="product-info__social">
-                <button class="product-info__social-btn" aria-label="Поделиться">
-                  <img src="assets/images/systemImg/Heart_favorite.svg" alt="Избранное">
-                </button>
-              </div>
+    <!-- Основной контент -->
+    <section class="product__main">
+      <!-- Изображение -->
+      <div class="product__image">
+        <img src="assets/images/product/product-bcaa.png" alt="BCAA 5000 Powder от Optimum Nutrition">
+      </div>
+
+      <!-- Информация -->
+      <div class="product__info">
+        <div class="product__info-top">
+          <span class="product__info-sku">Артикул: 0043194</span>
+          <h1 class="product__info-title">BCAA 5000 - 400 КАПС</h1>
+          <div class="product__info-rating">
+            <div class="product__info-stars">
+              <img src="assets/images/systemImg/star.svg" alt="★">
+              <img src="assets/images/systemImg/star.svg" alt="★">
+              <img src="assets/images/systemImg/star.svg" alt="★">
+              <img src="assets/images/systemImg/star.svg" alt="★">
+              <img src="assets/images/systemImg/star.svg" alt="★">
             </div>
-
-
-            <div class="product-specs">
-              <div class="product-specs__row">
-                <span class="product-specs__label">Категория</span>
-                <span class="product-specs__value">BCAA</span>
-              </div>
-              <div class="product-specs__row">
-                <span class="product-specs__label">Поддерживаемая цель</span>
-                <span class="product-specs__value">Увеличение энергии<br>Набор мышечной массы<br>Сжигание жира</span>
-              </div>
-              <div class="product-specs__row">
-                <span class="product-specs__label">Бренд</span>
-                <span class="product-specs__value">Optimum Nutrition</span>
-              </div>
-            </div>
-
-
-            <div class="product-variations">
-              <h2 class="product-variations__title">Другие варианты продукта</h2>
-              <div class="product-variations__options">
-                <button class="product-variations__option">
-                  <span class="product-variations__option-quantity">60 капс.</span>
-                  <span class="product-variations__option-price">690 ₽</span>
-                </button>
-                <button class="product-variations__option">
-                  <span class="product-variations__option-quantity">200 капс.</span>
-                  <span class="product-variations__option-price">1800 ₽</span>
-                </button>
-                <button class="product-variations__option">
-                  <span class="product-variations__option-quantity">400 капс.</span>
-                  <span class="product-variations__option-price">2500 ₽</span>
-                </button>
-              </div>
-            </div>
-
-
-            <button class="product-action-btn product-action-btn--primary">
-              Добавить в корзину
+            <span class="product__info-rating-value">4.8</span>
+            <span class="product__info-rating-count">(12 отзывов)</span>
+          </div>
+          <div class="product__info-social">
+            <button class="product__info-social-btn" aria-label="Поделиться">
+              <img src="assets/images/systemImg/Heart_favorite.svg" alt="Избранное">
             </button>
           </div>
         </div>
 
-
-        <div class="product-details">
-          <div class="product-details__section">
-            <h2 class="product-details__section-title">Описание</h2>
-            <div class="product-details__content">
-              <p>BCAA 5000 Powder от Optimum Nutrition — это добавка, состоящая из равновесных аминокислот BCAA, которые играют ключевую роль в поддержании и росте мышечной массы...</p>
-              <p>Каждая порция содержит 1000 мг BCAA, что помогает стимулировать синтез белка в мышцах и предотвратить их разрушение.</p>
-              <p>Аминокислоты BCAA 1000 Caps рекомендуется принимать утром и/или за 30 минут до или сразу после тренировки...</p>
-            </div>
+        <!-- Характеристики -->
+        <div class="product__specs">
+          <div class="product__specs-row">
+            <span class="product__specs-label">Категория</span>
+            <span class="product__specs-value">BCAA</span>
           </div>
-
-          <div class="product-details__section">
-            <h2 class="product-details__section-title">Состав продукта</h2>
-            <table class="product-composition">
-              <thead>
-                <tr>
-                  <th>Компонент</th>
-                  <th>Содержание</th>
-                  <th>Роль</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Валин</td>
-                  <td>250 мг.</td>
-                  <td>Помогает поддерживать баланс азота...</td>
-                </tr>
-                <tr>
-                  <td>Изолейцин</td>
-                  <td>250 мг.</td>
-                  <td>Обеспечивает энергию...</td>
-                </tr>
-                <tr>
-                  <td>Лейцин</td>
-                  <td>500 мг.</td>
-                  <td>Стимулирует синтез белка...</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="product-composition__note">
-              Размер порции: 2 капс.
-            </div>
+          <div class="product__specs-row">
+            <span class="product__specs-label">Поддерживаемая цель</span>
+            <span class="product__specs-value">Увеличение энергии<br>Набор мышечной массы<br>Сжигание жира</span>
           </div>
+          <div class="product__specs-row">
+            <span class="product__specs-label">Бренд</span>
+            <span class="product__specs-value">Optimum Nutrition</span>
+          </div>
+        </div>
+
+        <!-- Варианты -->
+        <div class="product__variations">
+          <h2 class="product__variations-title">Другие варианты продукта</h2>
+          <div class="product__variations-options">
+            <button class="product__variations-option">
+              <span class="product__variations-option-quantity">60 капс.</span>
+              <span class="product__variations-option-price">690 ₽</span>
+            </button>
+            <button class="product__variations-option">
+              <span class="product__variations-option-quantity">200 капс.</span>
+              <span class="product__variations-option-price">1800 ₽</span>
+            </button>
+            <button class="product__variations-option">
+              <span class="product__variations-option-quantity">400 капс.</span>
+              <span class="product__variations-option-price">2500 ₽</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Кнопка -->
+        <button class="product__action-btn product__action-btn--primary">
+          Добавить в корзину
+        </button>
+      </div>
+    </section>
+
+    <!-- Детали -->
+    <section class="product__details">
+      <div class="product__details-section">
+        <h2 class="product__details-section-title">Описание</h2>
+        <div class="product__details-content">
+          <p>BCAA 5000 Powder от Optimum Nutrition — это добавка, состоящая из равновесных аминокислот BCAA, которые играют ключевую роль в поддержании и росте мышечной массы...</p>
+          <p>Каждая порция содержит 1000 мг BCAA, что помогает стимулировать синтез белка в мышцах и предотвратить их разрушение.</p>
+          <p>Аминокислоты BCAA 1000 Caps рекомендуется принимать утром и/или за 30 минут до или сразу после тренировки...</p>
         </div>
       </div>
-    </div>
-  </main>
 
-
-  <footer>
-    <div class="footer">
-      <div class="footer_content_cont">
-        <div class="footer_block">
-          <div class="footer_block_logo">
-            <img src="assets/images/systemImg/logo.svg" alt="SportFuel">
-          </div>
-        </div>
-        <div class="footer_block">
-          <h2>Разделы сайта</h2>
-          <a href="index.html">Главная</a>
-          <a href="katalog.html">Каталог</a>
-          <a href="payment_and_delivery.html">Доставка</a>
-          <a href="order.html">Контакты</a>
-        </div>
-        <div class="footer_block">
-          <h2>Контактная информация</h2>
-          <a href="tel:+79402389143">Телефон: +7 (940) 238-91-43</a>
-          <a href="mailto:info@sportfuel.ru">Email: info@sportfuel.ru</a>
-          <a href="#">Мы в интернете</a>
-          <div class="footer_block_mi_v_inete">
-            <img src="assets/images/systemImg/Сферум_Logo.svg" alt="Сферум">
-            <img src="assets/images/systemImg/Max_logo.svg" alt="Max">
-            <img src="assets/images/systemImg/Rutube.svg" alt="Rutube">
-            <img src="assets/images/systemImg/VK_Logo 1.svg" alt="VK">
-          </div>
-        </div>
-        <div class="footer_block">
-          <h2>Подпишись на нашу рассылку</h2>
-          <div class="footer_block_input_follow">
-            <input type="email" placeholder="Электронная почта">
-            <button>Подписаться</button>
-          </div>
-          <p class="footer_block_input_follow_p">Ты всегда будешь в курсе новинок и выгодных предложений!</p>
+      <div class="product__details-section">
+        <h2 class="product__details-section-title">Состав продукта</h2>
+        <table class="product__composition">
+          <thead>
+            <tr>
+              <th>Компонент</th>
+              <th>Содержание</th>
+              <th>Роль</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Валин</td>
+              <td>250 мг.</td>
+              <td>Помогает поддерживать баланс азота...</td>
+            </tr>
+            <tr>
+              <td>Изолейцин</td>
+              <td>250 мг.</td>
+              <td>Обеспечивает энергию...</td>
+            </tr>
+            <tr>
+              <td>Лейцин</td>
+              <td>500 мг.</td>
+              <td>Стимулирует синтез белка...</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="product__composition-note">
+          Размер порции: 2 капс.
         </div>
       </div>
+    </section>
+  </div>
+</main>
+
+<!-- ========== FOOTER (уже в БЭМ) ========== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__column">
+      <img src="assets/images/systemImg/logo.svg" alt="SportFuel" class="footer__logo">
     </div>
-    <h2 class="footer_rules">©2025 SportFuel. Все права защищены.</h2>
-  </footer>
+    <div class="footer__column">
+      <h3 class="footer__title">Разделы сайта</h3>
+      <a href="index.html" class="footer__link">Главная</a>
+      <a href="katalog.html" class="footer__link">Каталог</a>
+      <a href="payment_and_delivery.html" class="footer__link">Доставка</a>
+      <a href="order.html" class="footer__link">Контакты</a>
+    </div>
+    <div class="footer__column">
+      <h3 class="footer__title">Контактная информация</h3>
+      <a href="tel:+79402389143" class="footer__link">Телефон: +7 (940) 238-91-43</a>
+      <a href="mailto:info@sportfuel.ru" class="footer__link">Email: info@sportfuel.ru</a>
+      <a href="#" class="footer__link">Мы в интернете</a>
+      <div class="footer__socials">
+        <img src="assets/images/systemImg/Сферум_Logo.svg" alt="Сферум">
+        <img src="assets/images/systemImg/Max_logo.svg" alt="Max">
+        <img src="assets/images/systemImg/Rutube.svg" alt="Rutube">
+        <img src="assets/images/systemImg/VK_Logo 1.svg" alt="VK">
+      </div>
+    </div>
+    <div class="footer__column">
+      <h3 class="footer__title">Подпишись на нашу рассылку</h3>
+      <div class="footer__subscribe">
+        <input type="email" placeholder="Электронная почта" class="footer__subscribe-input">
+        <button class="footer__subscribe-btn">Подписаться</button>
+      </div>
+      <p class="footer__subscribe-text">Ты всегда будешь в курсе новинок и выгодных предложений!</p>
+    </div>
+  </div>
+  <div class="footer__copyright">©2025 SportFuel. Все права защищены.</div>
+</footer>
 
 </body>
 </html>

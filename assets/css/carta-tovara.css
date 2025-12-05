@@ -1,4 +1,4 @@
-/* ====================== ОБЩИЕ СТИЛИ ====================== */
+/* ====================== ОБЩИЕ СБРОСЫ ====================== */
 
 * {
   margin: 0;
@@ -41,16 +41,14 @@ input, button {
   font-size: 1rem;
 }
 
+/* ====================== СТРАНИЦА ТОВАРА ====================== */
 
-/* ========= контент ======== */
-
-.main_content_container {
+.product__container {
   width: 85%;
-  min-height: 200px;
   margin: 100px auto;
 }
 
-/* пример путь к странице через слэш (хдебные крошки) */
+/* Хлебные крошки */
 .breadcrumbs {
   margin-bottom: 30px;
 }
@@ -83,91 +81,87 @@ input, button {
   font-weight: 500;
 }
 
-/* основной БЛОК товара */
-.product-page {
-  margin-bottom: 100px;
-}
-
-.product-page__container {
+/* Основной блок */
+.product__main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  margin-bottom: 100px;
 }
 
-/* изображение */
-.product-image img {
+/* Изображение */
+.product__image img {
   width: 100%;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* инфо о товаре */
-.product-info {
+/* Информация о товаре */
+.product__info {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.product-info__top {
+.product__info-top {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.product-info__sku {
+.product__info-sku {
   font-size: 0.875rem;
   color: #aaaaaa;
 }
 
-.product-info__title {
+.product__info-title {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
   color: #ffffff;
 }
 
-.product-info__rating {
+.product__info-rating {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.product-info__stars {
+.product__info-stars {
   display: flex;
-  flex-direction: row;
   gap: 0.25rem;
   align-items: center;
 }
 
-.product-info__stars img {
+.product__info-stars img {
   width: 16px;
   height: 16px;
 }
 
-.product-info__rating-value {
+.product__info-rating-value {
   font-weight: 700;
   font-size: 1.125rem;
   color: #ffffff;
 }
 
-.product-info__rating-count {
+.product__info-rating-count {
   font-size: 0.875rem;
   color: #aaaaaa;
 }
 
-.product-info__social-btn img {
+.product__info-social-btn img {
   width: 41px;
   height: 41px;
 }
 
-/* характеристики в товаре */
-.product-specs {
+/* Характеристики */
+.product__specs {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-.product-specs__row {
+.product__specs-row {
   display: flex;
   justify-content: space-between;
   padding: 0.75rem 1rem;
@@ -176,24 +170,24 @@ input, button {
   font-size: 0.875rem;
 }
 
-.product-specs__label {
+.product__specs-label {
   font-weight: 500;
   color: #aaaaaa;
   min-width: 180px;
 }
 
-.product-specs__value {
+.product__specs-value {
   text-align: right;
   color: #ffffff;
   white-space: pre-line;
 }
 
-/* варианты продукта */
-.product-variations {
+/* Варианты продукта */
+.product__variations {
   margin-top: 1.5rem;
 }
 
-.product-variations__title {
+.product__variations-title {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 1.25rem;
@@ -201,14 +195,14 @@ input, button {
   margin-bottom: 1rem;
 }
 
-.product-variations__options {
+.product__variations-options {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.product-variations__option {
+.product__variations-option {
   padding: 0.75rem 1rem;
   background-color: #1F1F1F;
   border: 2px solid #333;
@@ -216,30 +210,30 @@ input, button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   transition: border-color 0.2s ease, background-color 0.2s ease;
   min-width: 120px;
 }
 
-.product-variations__option:hover {
+.product__variations-option:hover {
   border-color: #FF4F90;
   background-color: #2d2d2d;
 }
 
-.product-variations__option-quantity {
+.product__variations-option-quantity {
   font-size: 0.875rem;
   color: #aaaaaa;
   margin-bottom: 0.25rem;
 }
 
-.product-variations__option-price {
+.product__variations-option-price {
   font-size: 1.125rem;
   font-weight: 700;
   color: #ffffff;
 }
 
-.product-action-btn {
+/* Кнопка действия */
+.product__action-btn {
   padding: 1rem;
   border-radius: 30px;
   font-family: 'Inter', sans-serif;
@@ -252,30 +246,29 @@ input, button {
   margin-top: 1rem;
 }
 
-.product-action-btn--primary {
+.product__action-btn--primary {
   background-color: #FF4F90;
   color: #121212;
 }
 
-.product-action-btn--primary:hover {
+.product__action-btn--primary:hover {
   background-color: #F14372;
 }
 
-/* описание и состав */
-.product-details {
+/* Детали продукта */
+.product__details {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-top: 50px;
 }
 
-.product-details__section {
+.product__details-section {
   background-color: #1F1F1F;
   padding: 1.5rem;
   border-radius: 25px;
 }
 
-.product-details__section-title {
+.product__details-section-title {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 1.75rem;
@@ -283,73 +276,66 @@ input, button {
   margin-bottom: 1rem;
 }
 
-.product-details__content p {
+.product__details-content p {
   margin-bottom: 1rem;
   color: #ffffff;
 }
 
-/* таблица состава */
-.product-composition {
+/* Таблица состава */
+.product__composition {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
   font-size: 0.875rem;
 }
 
-.product-composition th,
-.product-composition td {
+.product__composition th,
+.product__composition td {
   padding: 0.75rem;
   text-align: left;
   border-bottom: 1px solid #333;
 }
 
-.product-composition th {
+.product__composition th {
   background-color: #2d2d2d;
   font-weight: 600;
   color: #ffffff;
 }
 
-.product-composition td {
+.product__composition td {
   color: #ffffff;
 }
 
-.product-composition__note {
+.product__composition-note {
   font-size: 0.875rem;
   color: #aaaaaa;
   margin-top: 0.5rem;
   text-align: right;
 }
 
-
-/* ====================== АДАПТИВ  ====================== */
-
-/*  адаптация для планшетов  */
+/* ====================== АДАПТИВ ====================== */
 
 @media (max-width: 1154px) {
-  .product-page__container,
-  .product-details {
+  .product__main,
+  .product__details {
     grid-template-columns: 1fr;
   }
-
 }
 
-/* мобилка  */
-
 @media (max-width: 768px) {
-  .main_content_container {
+  .product__container {
     width: 95%;
   }
 
-  .product-info__title {
+  .product__info-title {
     font-size: 1.75rem;
   }
 
-  .product-variations__options {
+  .product__variations-options {
     flex-direction: column;
   }
 
-  .product-variations__option {
+  .product__variations-option {
     width: 100%;
   }
 }
- 

@@ -1,296 +1,158 @@
-
-
-
-.payment_and_delivery_block1{
-	width: 85%;
-	height: 360px;
-/*	border: 1px solid black;*/
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.payment_and_delivery_block1 h2{
-	color: white;
-	font-size: 60px;
-}
-.payment_and_delivery_block1 p{
-	font-size: 32px;
-	color: grey;
-	margin-top: 10px;
+.delivery__container {
+  width: 90%;
+  max-width: 1728px;
+  margin: 0 auto;
+  padding: 120px 0;
 }
 
-.shipping_methods{
-	width: 85%;
-	min-height: 360px;
-/*	border: 1px solid black;*/
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 100px;
-
+.delivery__hero {
+  text-align: center;
+  margin-bottom: 80px;
 }
 
-#shipping_methods_h2{
-	font-size: 40px;
-	text-align: center;
+.delivery__title {
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 16px;
 }
 
-.shipping_methods_block{
-	width: 100%;
-	height: 350px;
-	background-color: #1F1F1F;
-	border-radius: 9px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-}
-.shipping_methods_block h3{
-	font-size: 32px;
-}
-.shipping_methods_block p{
-	font-size: 20px;
-	color: grey;
-	text-align: center;
+.delivery__subtitle {
+  font-size: 32px;
+  color: #aaaaaa;
 }
 
-.shipping_methods_block h2{
-	font-size: 36px;
+.delivery__section-title {
+  font-size: 48px;
+  text-align: center;
+  margin: 80px 0 60px;
 }
 
-.terms_of_delivery{
-	margin: 70px auto;
-	width: 85%;
-	height: 300px;
-	border-radius: 9px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: #1F1F1F;
-	gap: 10px;
-}
-.terms_of_delivery h2{
-	margin-left: 30px;
-	font-size: 32px;
+/* Способы доставки */
+.delivery__methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  margin-bottom: 100px;
 }
 
-.terms_of_delivery p{
-	margin-left: 50px;
-	font-size: 24px;
-}
-.pay_methods{
-	width: 85%;
-	min-height: 230px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	margin: 0 auto;
-}
-.pay_methods_block{
-	width: 100%;
-	background-color: transparent;
-	border-radius: 9px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	margin-bottom: 45px;
-	margin-top: 20px;
-
+.delivery-method {
+  background-color: #1F1F1F;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
 }
 
+.delivery-method__title {
+  font-size: 32px;
+  margin: 10px 0;
+}
 
+.delivery-method__text {
+  font-size: 20px;
+  color: #aaaaaa;
+  line-height: 1.5;
+}
 
+.delivery-method__price {
+  font-size: 36px;
+  color: #FF4F90;
+  font-weight: 600;
+}
 
-/* ------- Планшеты (769px – 1024px) ------- */
+/* Условия доставки */
+.delivery__terms {
+  background-color: #1F1F1F;
+  border-radius: 12px;
+  padding: 50px 60px;
+  margin-bottom: 100px;
+}
+
+.delivery__terms-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.delivery__terms-list {
+  list-style: none;
+  font-size: 24px;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.delivery__terms-list li::before {
+  content: "• ";
+  color: #FF4F90;
+  font-weight: bold;
+}
+
+/* Преимущества / оплата */
+.delivery__payment {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.payment-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.payment-card__title {
+  font-size: 28px;
+}
+
+.payment-card__text {
+  font-size: 20px;
+  color: #aaaaaa;
+}
+
 /* ====================== АДАПТИВ ====================== */
-
 @media (max-width: 1024px) {
-  .payment_and_delivery_block1 {
-    width: 90%;
-    height: auto;
-    padding: 30px 20px;
-  }
-
-  .payment_and_delivery_block1 h2 {
-    font-size: 42px;
-  }
-
-  .payment_and_delivery_block1 p {
-    font-size: 24px;
-  }
-
-  #shipping_methods_h2 {
-    font-size: 32px;
-    margin: 5px 0 10px;
-  }
-
-  .shipping_methods {
-    width: 90%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-
-  .shipping_methods_block {
-    height: auto;
-    padding: 25px 15px;
-    gap: 15px;
-  }
-
-  .shipping_methods_block h3 {
-    font-size: 26px;
-  }
-
-  .shipping_methods_block p {
-    font-size: 18px;
-  }
-
-  .shipping_methods_block h2 {
-    font-size: 30px;
-  }
-
-  .terms_of_delivery {
-    width: 90%;
-    height: auto;
-    padding: 25px 30px;
-    gap: 12px;
-  }
-
-  .terms_of_delivery h2 {
-    font-size: 28px;
-    margin-left: 0;
-  }
-
-  .terms_of_delivery p {
-    font-size: 20px;
-    margin-left: 20px;
-  }
-
-  .pay_methods {
-    width: 90%;
+  .delivery__methods,
+  .delivery__payment {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
 
-  .pay_methods_block {
-    margin-top: 15px;
-    margin-bottom: 30px;
-  }
-
-  .pay_methods_block h3 {
-    font-size: 26px;
-  }
-
-  .pay_methods_block p {
-    font-size: 18px;
-  }
+  .delivery__title { font-size: 48px; }
+  .delivery__subtitle { font-size: 26px; }
+  .delivery__section-title { font-size: 40px; }
 }
 
-
-/*  Мобильные  */
 @media (max-width: 768px) {
-  .payment_and_delivery_block1 {
-    width: 95%;
-    padding: 25px 5px;
-  }
+  .delivery__container { padding: 80px 0; width: 95%; }
+  .delivery__hero { margin-bottom: 60px; }
+  .delivery__title { font-size: 36px; }
+  .delivery__subtitle { font-size: 22px; }
+  .delivery__section-title { font-size: 32px; margin: 60px 0 40px; }
 
-  .payment_and_delivery_block1 h2 {
-    font-size: 32px;
-  }
-
-  .payment_and_delivery_block1 p {
-    font-size: 20px;
-  }
-
-  #shipping_methods_h2,
-  #pay_methods_h2 {
-    font-size: 28px;
-    margin: 50px 0 25px;
-  }
-
-  .shipping_methods,
-  .pay_methods {
-    width: 95%;
+  .delivery__methods,
+  .delivery__payment {
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 30px;
   }
 
-  .shipping_methods_block,
-  .pay_methods_block {
-    padding: 20px 15px;
-  }
+  .delivery-method,
+  .payment-card { padding: 30px 20px; }
 
-  .shipping_methods_block h3,
-  .pay_methods_block h3 {
-    font-size: 22px;
-  }
-
-  .shipping_methods_block p,
-  .pay_methods_block p {
-    font-size: 16px;
-  }
-
-  .shipping_methods_block h2 {
-    font-size: 26px;
-  }
-
-  .terms_of_delivery {
-    width: 95%;
-    padding: 20px 15px;
-    gap: 10px;
-  }
-
-  .terms_of_delivery h2 {
-    font-size: 24px;
-    margin-left: 0;
-  }
-
-  .terms_of_delivery p {
-    font-size: 18px;
-    margin-left: 15px;
-  }
+  .delivery__terms { padding: 40px 30px; }
+  .delivery__terms-list { font-size: 20px; }
 }
-
 
 @media (max-width: 480px) {
-  .payment_and_delivery_block1 h2 {
-    font-size: 28px;
-  }
-
-  .payment_and_delivery_block1 p {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  #shipping_methods_h2,
-  #pay_methods_h2 {
-    font-size: 24px;
-    margin: 5px 0 20px;
-  }
-
-  .shipping_methods_block h3,
-  .pay_methods_block h3 {
-    font-size: 20px;
-  }
-
-  .shipping_methods_block p,
-  .pay_methods_block p {
-    font-size: 15px;
-  }
-
-  .shipping_methods_block h2 {
-    font-size: 24px;
-  }
-
-  .terms_of_delivery h2 {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  .terms_of_delivery p {
-    font-size: 16px;
-  }
+  .delivery__title { font-size: 32px; }
+  .delivery__subtitle { font-size: 18px; }
+  .delivery__section-title { font-size: 28px; }
+  .delivery-method__title,
+  .payment-card__title { font-size: 24px; }
+  .delivery-method__price { font-size: 30px; }
 }

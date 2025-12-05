@@ -1,0 +1,283 @@
+/* ====================== ОСНОВНОЙ КОНТЕНТ: ЛИЧНЫЙ КАБИНЕТ ====================== */
+
+.main {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.profile {
+  padding: 40px 0;
+}
+
+/* === Заголовок === */
+.profile__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile__title {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 12px 0;
+}
+
+.profile__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: #aaa;
+  margin: 0;
+}
+
+/* === Сетка === */
+.profile__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* === Карточка === */
+.profile__card {
+  background-color: #1F1F1F;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* === Левая колонка: Информация === */
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile__avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background-color: #FF4F90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__avatar img {
+  width: 56px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.profile__name {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.profile__email {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #aaa;
+  text-align: center;
+  margin: 4px 0 20px 0;
+}
+
+.profile__stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.profile__stat-item {
+  text-align: center;
+}
+
+.profile__stat-value {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #FF4F90;
+  display: block;
+}
+
+.profile__stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.profile__card-title {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 16px 0;
+}
+
+.profile__contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile__contact {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.profile__contact-label {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* === Правая колонка: Форма === */
+.profile__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile__label {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.profile__input,
+.profile__textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  padding: 14px;
+  background-color: #1A1A1A;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.profile__input:focus,
+.profile__textarea:focus {
+  border-color: #FF4F90;
+}
+
+.profile__textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.profile__btn {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.profile__btn {
+  background: linear-gradient(90deg, #FF4F90, #FE68A3);
+  color: white;
+}
+
+.profile__btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.profile__btn--outline {
+  background: transparent;
+  border: 1px solid #FF4F90;
+  color: #FF4F90;
+}
+
+.profile__btn--danger {
+  background: linear-gradient(90deg, #FF4F4F, #FF6B6B);
+  color: white;
+}
+
+.profile__card--danger {
+  background-color: #2a1a1a;
+}
+
+/* ====================== АДАПТИВНОСТЬ ====================== */
+
+/* Планшеты */
+@media (max-width: 1024px) {
+  .profile__title {
+    font-size: 40px;
+  }
+
+  .profile__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile__name {
+    font-size: 24px;
+  }
+
+  .profile__stat-value {
+    font-size: 28px;
+  }
+}
+
+/* Телефоны */
+@media (max-width: 768px) {
+  .profile {
+    padding: 24px 0;
+  }
+
+  .profile__title {
+    font-size: 32px;
+  }
+
+  .profile__subtitle {
+    font-size: 18px;
+  }
+
+  .profile__card {
+    padding: 24px;
+  }
+
+  .profile__avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile__name {
+    font-size: 20px;
+  }
+}
+
+/* Маленькие телефоны */
+@media (max-width: 480px) {
+  .profile__stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .profile__btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

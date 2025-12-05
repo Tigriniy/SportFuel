@@ -18,218 +18,168 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav>
-		<div class="header">
-			<div class="header_left">
-			<a href="index.html" class="header_logo">
-				<img src="assets/images/systemImg/logo.svg" alt="SportFuel">
-			</a>
 
-			<!-- СКРЫТЫЙ ЧЕКБОКС -->
-			<input type="checkbox" id="burger" class="header_burger-checkbox">
-
-			<!-- ОВЕРЛЕЙ ДЛЯ ЗАКРЫТИЯ ПО КЛИКУ -->
-			<label for="burger" class="header_overlay"></label>
-
-			<!-- КНОПКА БУРГЕРА / КРЕСТИКА -->
-			<label for="burger" class="header_burger-button">
-				<span class="header_burger-line header_burger-line--1"></span>
-				<span class="header_burger-line header_burger-line--2"></span>
-				<span class="header_burger-line header_burger-line--3"></span>
-			</label>
-
-			<!-- МОБИЛЬНОЕ МЕНЮ -->
-			<div class="header_mobile-menu">
-				<div class="header_mobile-menu-inner">
-				<a href="index.html" class="header_mobile-link">
-					<img src="assets/images/systemImg/home.svg" alt="Главная">
-					<span>Главная</span>
-				</a>
-				<a href="katalog.html" class="header_mobile-link">
-					<img src="assets/images/systemImg/list.svg" alt="Каталог">
-					<span>Каталог</span>
-				</a>
-				<a href="payment_and_delivery.html" class="header_mobile-link">
-					<img src="assets/images/systemImg/truck.svg" alt="Доставка">
-					<span>Доставка</span>
-				</a>
-				<a href="order.html" class="header_mobile-link">
-					<img src="assets/images/systemImg/phone.svg" alt="Контакты">
-					<span>Контакты</span>
-				</a>
-
-				<div class="header_mobile-controls">
-					<div class="header_mobile-search">
-					<input type="text" placeholder="Поиск...">
-					<img src="assets/images/systemImg/search.svg" alt="Поиск">
-					</div>
-
-					<div class="header_mobile-icons">
-					<a href="reg-in.html" class="header_mobile-icon-link">
-						<img src="assets/images/systemImg/profile.svg" alt="Профиль">
-					</a>
-					<a href="favorite.html" class="header_mobile-icon-link">
-						<img src="assets/images/systemImg/favorite.svg" alt="Избранное">
-					</a>
-					<a href="cart.html" class="header_mobile-icon-link">
-						<img src="assets/images/systemImg/cart.svg" alt="Корзина">
-					</a>
-					</div>
-				</div>
-				</div>
-			</div>
-			</div>
-
-			<!-- ОСНОВНОЕ МЕНЮ  -->
-			<div class="header_right">
-			<a href="index.html">Главная</a>
-			<a href="katalog.html">Каталог</a>
-			<a href="payment_and_delivery.html">Доставка</a>
-			<a href="order.html">Контакты</a>
-			<div class="header_right_search_cont">
-				<input type="text" placeholder="Поиск">
-				<img src="assets/images/systemImg/search.svg" alt="Поиск">
-			</div>
-			<a href="reg-in.html">
-				<img src="assets/images/systemImg/profile.svg" alt="Профиль">
-			</a>
-			<a href="favorite.html">
-				<img src="assets/images/systemImg/favorite.svg" alt="Избранное">
-			</a>
-			<a href="cart.html">
-				<img src="assets/images/systemImg/cart.svg" alt="Корзина">
-			</a>
-			</div>
-		</div>
-	</nav>
-
-	<div class="header_mobile-menu">
-		<a href="index.html">Главная</a>
-		<a href="katalog.html">Каталог</a>
-		<a href="payment_and_delivery.html">Доставка</a>
-		<a href="order.html">Контакты</a>
-
-		<div class="header_mobile-controls">
-			<div class="header_mobile-search">
-			<input type="text" placeholder="Поиск">
-			<img src="assets/images/systemImg/search.svg" alt="Поиск">
-			</div>
-
-			<div class="header_mobile-icons">
-			<a href="reg-in.html">
-				<img src="assets/images/systemImg/profile.svg" alt="Профиль">
-			</a>
-			<a href="favorite.html">
-				<img src="assets/images/systemImg/favorite.svg" alt="Избранное">
-			</a>
-			<a href="cart.html">
-				<img src="assets/images/systemImg/cart.svg" alt="Корзина">
-			</a>
-			</div>
-		</div>
-	</div>
-	<main>
-		<div class="payment_and_delivery_block1">
-			<h2>Доставка и оплата</h2>
-			<p>Мы предлагаем удобные способы доставки и оплаты товара</p>
-		</div>
-		<br>
-		<h2 id="shipping_methods_h2">Способы доставки</h2>
-		<br>
-		<div class="shipping_methods">
-			<div class="shipping_methods_block">
-				<img src="assets/images/systemImg/car.svg" alt="">
-				<h3>Курьерская доставка</h3>
-				<p>Доставка по Томску и ТО в течение 1-2 дней</p>
-				<h2>От 300 ₽</h2>
-			</div>
-			<div class="shipping_methods_block">
-				<img src="assets/images/systemImg/layer1.svg" alt="">
-				<h3>Пункты выдачи</h3>
-				<p>Более 500 пунктов выдачи по всей России</p>
-				<h2>От 300 ₽</h2>
-			</div>
-			<div class="shipping_methods_block">
-				<img src="assets/images/systemImg/Значок - Почта России.svg" alt="">
-				<h3>Почта России</h3>
-				<p>Доставка в любой регион страны</p>
-				<h2>От 250 ₽</h2>
-			</div>
-		</div>
-
-		<div class="terms_of_delivery">
-			<h2>Условия доставки</h2>
-			<p>Бесплатная доставка при заказе от 3000 ₽</p>
-			<p>Экспресс-доставка в пределах ТО - 500 ₽</p>
-			<p>Отслеживание заказа в личном кабинете</p>
-			<p>Доставка в регионы - от 3 до 7 рабочих дней</p>
-		</div>
-		<h2 id="shipping_methods_h2">Способы оплаты</h2>
-		<div class="pay_methods">
-			<div class="pay_methods_block">
-				<img src="assets/images/systemImg/guard.svg" alt="">
-				<h3>Гарантия качества</h3>
-				<p>Все товары сертифицированы</p>
-			</div>
-			<div class="pay_methods_block">
-				<img src="assets/images/systemImg/time.svg" alt="">
-				<h3>Быстрая обработка</h3>
-				<p>Отправка заказов в день оформления</p>
-			</div>
-			<div class="pay_methods_block">
-				<img src="assets/images/systemImg/gift.svg" alt="">
-				<h3>Подарки</h3>
-				<p>Бонусы к каждому товару</p>
-			</div>
-			<div class="pay_methods_block">
-				<img src="assets/images/systemImg/bank_cart.svg" alt="">
-				<h3>Оплата при получении</h3>
-				<p>Наличными или картой курьеру</p>
-			</div>
-		</div>
-
-
-
-	</main>
-
-	<footer>
-    <div class="footer">
-      <div class="footer_content_cont">
-        <div class="footer_block">
-          <div class="footer_block_logo">
+<!-- === HEADER (тот же, что и везде) === -->
+<header class="header">
+    <div class="header__inner">
+        <a href="index.html" class="header__logo">
             <img src="assets/images/systemImg/logo.svg" alt="SportFuel">
-          </div>
+        </a>
+
+        <input type="checkbox" id="burger" class="header__burger-checkbox">
+        <label for="burger" class="header__overlay"></label>
+        <label for="burger" class="header__burger-button">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </label>
+
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav-link">Главная</a>
+            <a href="katalog.html" class="header__nav-link">Каталог</a>
+            <a href="payment_and_delivery.html" class="header__nav-link">Доставка</a>
+            <a href="order.html" class="header__nav-link">Контакты</a>
+
+            <div class="header__search">
+                <input type="text" placeholder="Поиск" class="header__search-input">
+                <img src="assets/images/systemImg/search.svg" alt="Поиск">
+            </div>
+
+            <a href="reg-in.html" class="header__icon-link"><img src="assets/images/systemImg/profile.svg" alt="Профиль"></a>
+            <a href="favorite.html" class="header__icon-link"><img src="assets/images/systemImg/favorite.svg" alt="Избранное"></a>
+            <a href="cart.html" class="header__icon-link"><img src="assets/images/systemImg/cart.svg" alt="Корзина"></a>
+        </nav>
+
+        <div class="header__mobile-menu">
+            <div class="header__mobile-inner">
+                <a href="index.html" class="header__mobile-link"><img src="assets/images/systemImg/home.svg" alt=""> <span>Главная</span></a>
+                <a href="katalog.html" class="header__mobile-link"><img src="assets/images/systemImg/list.svg" alt=""> <span>Каталог</span></a>
+                <a href="payment_and_delivery.html" class="header__mobile-link"><img src="assets/images/systemImg/truck.svg" alt=""> <span>Доставка</span></a>
+                <a href="order.html" class="header__mobile-link"><img src="assets/images/systemImg/phone.svg" alt=""> <span>Контакты</span></a>
+
+                <div class="header__mobile-controls">
+                    <div class="header__mobile-search">
+                        <input type="text" placeholder="Поиск...">
+                        <img src="assets/images/systemImg/search.svg" alt="Поиск">
+                    </div>
+                    <div class="header__mobile-icons">
+                        <a href="reg-in.html" class="header__mobile-icon"><img src="assets/images/systemImg/profile.svg" alt="Профиль"></a>
+                        <a href="favorite.html" class="header__mobile-icon"><img src="assets/images/systemImg/favorite.svg" alt="Избранное"></a>
+                        <a href="cart.html" class="header__mobile-icon"><img src="assets/images/systemImg/cart.svg" alt="Корзина"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer_block">
-          <h2>Разделы сайта</h2>
-          <a href="index.html">Главная</a>
-          <a href="katalog.html">Каталог</a>
-          <a href="#">Доставка</a>
-          <a href="#">Контакты</a>
-        </div>
-        <div class="footer_block">
-          <h2>Контактная информация</h2>
-          <a href="tel:+79402389143">Телефон: +7 (940) 238-91-43</a>
-          <a href="mailto:info@sportfuel.ru">Email: info@sportfuel.ru</a>
-          <a href="#">Мы в интернете</a>
-          <div class="footer_block_mi_v_inete">
-            <img src="assets/images/systemImg/Сферум_Logo.svg" alt="Сферум">
-            <img src="assets/images/systemImg/Max_logo.svg" alt="Max">
-            <img src="assets/images/systemImg/Rutube.svg" alt="Rutube">
-            <img src="assets/images/systemImg/VK_Logo 1.svg" alt="VK">
-          </div>
-        </div>
-        <div class="footer_block">
-          <h2>Подпишись на нашу рассылку</h2>
-          <div class="footer_block_input_follow">
-            <input type="email" placeholder="Электронная почта">
-            <button>Подписаться</button>
-          </div>
-          <p class="footer_block_input_follow_p">Ты всегда будешь в курсе новинок и выгодных предложений!</p>
-        </div>
-      </div>
     </div>
-    <h2 class="footer_rules">©2025 SportFuel. Все права защищены.</h2>
-  	</footer>
+</header>
+
+<main class="delivery">
+    <div class="delivery__container">
+
+        <!-- Заголовок -->
+        <section class="delivery__hero">
+            <h1 class="delivery__title">Доставка и оплата</h1>
+            <p class="delivery__subtitle">Мы предлагаем удобные способы доставки и оплаты товара</p>
+        </section>
+
+        <!-- Способы доставки -->
+        <h2 class="delivery__section-title">Способы доставки</h2>
+        <div class="delivery__methods">
+            <div class="delivery-method">
+                <img src="assets/images/systemImg/car.svg" alt="Курьер">
+                <h3 class="delivery-method__title">Курьерская доставка</h3>
+                <p class="delivery-method__text">Доставка по Томску и ТО в течение 1-2 дней</p>
+                <span class="delivery-method__price">От 300 ₽</span>
+            </div>
+            <div class="delivery-method">
+                <img src="assets/images/systemImg/layer1.svg" alt="ПВЗ">
+                <h3 class="delivery-method__title">Пункты выдачи</h3>
+                <p class="delivery-method__text">Более 500 пунктов выдачи по всей России</p>
+                <span class="delivery-method__price">От 300 ₽</span>
+            </div>
+            <div class="delivery-method">
+                <img src="assets/images/systemImg/Значок - Почта России.svg" alt="Почта">
+                <h3 class="delivery-method__title">Почта России</h3>
+                <p class="delivery-method__text">Доставка в любой регион страны</p>
+                <span class="delivery-method__price">От 250 ₽</span>
+            </div>
+        </div>
+
+        <!-- Условия доставки -->
+        <section class="delivery__terms">
+            <h2 class="delivery__terms-title">Условия доставки</h2>
+            <ul class="delivery__terms-list">
+                <li>Бесплатная доставка при заказе от 3000 ₽</li>
+                <li>Экспресс-доставка в пределах ТО — 500 ₽</li>
+                <li>Отслеживание заказа в личном кабинете</li>
+                <li>Доставка в регионы — от 3 до 7 рабочих дней</li>
+            </ul>
+        </section>
+
+        <!-- Способы оплаты / преимущества -->
+        <h2 class="delivery__section-title">Способы оплаты</h2>
+        <div class="delivery__payment">
+            <div class="payment-card">
+                <img src="assets/images/systemImg/guard.svg" alt="">
+                <h3 class="payment-card__title">Гарантия качества</h3>
+                <p class="payment-card__text">Все товары сертифицированы</p>
+            </div>
+            <div class="payment-card">
+                <img src="assets/images/systemImg/time.svg" alt="">
+                <h3 class="payment-card__title">Быстрая обработка</h3>
+                <p class="payment-card__text">Отправка заказов в день оформления</p>
+            </div>
+            <div class="payment-card">
+                <img src="assets/images/systemImg/gift.svg" alt="">
+                <h3 class="payment-card__title">Подарки</h3>
+                <p class="payment-card__text">Бонусы к каждому товару</p>
+            </div>
+            <div class="payment-card">
+                <img src="assets/images/systemImg/bank_cart.svg" alt="">
+                <h3 class="payment-card__title">Оплата при получении</h3>
+                <p class="payment-card__text">Наличными или картой курьеру</p>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- === FOOTER (тот же, что и везде) === -->
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__column">
+            <img src="assets/images/systemImg/logo.svg" alt="SportFuel" class="footer__logo">
+        </div>
+        <div class="footer__column">
+            <h3 class="footer__title">Разделы сайта</h3>
+            <a href="index.html" class="footer__link">Главная</a>
+            <a href="katalog.html" class="footer__link">Каталог</a>
+            <a href="payment_and_delivery.html" class="footer__link">Доставка</a>
+            <a href="order.html" class="footer__link">Контакты</a>
+        </div>
+        <div class="footer__column">
+            <h3 class="footer__title">Контактная информация</h3>
+            <a href="tel:+79402389143" class="footer__link">Телефон: +7 (940) 238-91-43</a>
+            <a href="mailto:info@sportfuel.ru" class="footer__link">Email: info@sportfuel.ru</a>
+            <a href="#" class="footer__link">Мы в интернете</a>
+            <div class="footer__socials">
+                <img src="assets/images/systemImg/Сферум_Logo.svg" alt="Сферум">
+                <img src="assets/images/systemImg/Max_logo.svg" alt="Max">
+                <img src="assets/images/systemImg/Rutube.svg" alt="Rutube">
+                <img src="assets/images/systemImg/VK_Logo 1.svg" alt="VK">
+            </div>
+        </div>
+        <div class="footer__column">
+            <h3 class="footer__title">Подпишись на нашу рассылку</h3>
+            <div class="footer__subscribe">
+                <input type="email" placeholder="Электронная почта">
+                <button>Подписаться</button>
+            </div>
+            <p class="footer__subscribe-text">Ты всегда будешь в курсе новинок и выгодных предложений!</p>
+        </div>
+    </div>
+    <div class="footer__copyright">©2025 SportFuel. Все права защищены.</div>
+</footer>
+
 </body>
 </html>

@@ -1,17 +1,17 @@
-/* ====================== СТРАНИЦА ИЗБРАННОЕ ====================== */
+/* ====================== СТРАНИЦА КОРЗИНА ====================== */
 
-.favorite {
+.cart {
   min-height: 80vh;
   padding: 40px 20px;
 }
 
-.favorite__container {
+.cart__container {
   max-width: 1920px;
   margin: 0 auto;
   text-align: center;
 }
 
-.favorite__title {
+.cart__title {
   font-family: 'Epilogue', sans-serif;
   font-size: 48px;
   font-weight: 800;
@@ -19,8 +19,8 @@
   margin-bottom: 60px;
 }
 
-/* Блок "пустое избранное" */
-.favorite__empty {
+/* Блок "пустая корзина" */
+.cart__empty {
   width: 85%;
   max-width: 1920px;
   min-height: 400px;
@@ -34,14 +34,14 @@
   justify-content: center;
 }
 
-.favorite__empty-icon {
+.cart__empty-icon {
   width: 100px;
   height: auto;
   opacity: 0.8;
   margin-bottom: 24px;
 }
 
-.favorite__empty-title {
+.cart__empty-title {
   font-family: 'Epilogue', sans-serif;
   font-size: 32px;
   font-weight: 800;
@@ -49,7 +49,7 @@
   margin: 0 0 12px 0;
 }
 
-.favorite__empty-text {
+.cart__empty-text {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   color: #aaa;
@@ -58,7 +58,7 @@
   margin: 0 0 32px 0;
 }
 
-.favorite__empty-button {
+.cart__empty-button {
   font-family: 'Epilogue', sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -72,7 +72,7 @@
   display: inline-block;
 }
 
-.favorite__empty-button:hover {
+.cart__empty-button:hover {
   transform: translateY(-3px);
   opacity: 0.9;
   box-shadow: 0 6px 20px rgba(255, 79, 144, 0.3);
@@ -81,49 +81,49 @@
 /* ====================== АДАПТИВ ====================== */
 
 @media (max-width: 1024px) {
-  .favorite__title {
+  .cart__title {
     font-size: 42px;
     margin-bottom: 50px;
   }
 
-  .favorite__empty {
+  .cart__empty {
     min-height: 350px;
     padding: 30px 20px;
   }
 
-  .favorite__empty-title {
+  .cart__empty-title {
     font-size: 28px;
   }
 }
 
 @media (max-width: 768px) {
-  .favorite {
+  .cart {
     padding: 30px 15px;
   }
 
-  .favorite__title {
+  .cart__title {
     font-size: 36px;
     margin-bottom: 40px;
   }
 
-  .favorite__empty {
+  .cart__empty {
     min-height: 320px;
     padding: 30px 20px;
   }
 
-  .favorite__empty-icon {
+  .cart__empty-icon {
     width: 80px;
   }
 
-  .favorite__empty-title {
+  .cart__empty-title {
     font-size: 26px;
   }
 
-  .favorite__empty-text {
+  .cart__empty-text {
     font-size: 17px;
   }
 
-  .favorite__empty-button {
+  .cart__empty-button {
     width: 100%;
     max-width: 280px;
     padding: 14px 20px;
@@ -131,24 +131,24 @@
 }
 
 @media (max-width: 480px) {
-  .favorite__title {
+  .cart__title {
     font-size: 32px;
   }
 
-  .favorite__empty {
+  .cart__empty {
     padding: 24px 16px;
     min-height: 280px;
   }
 
-  .favorite__empty-title {
+  .cart__empty-title {
     font-size: 22px;
   }
 
-  .favorite__empty-text {
+  .cart__empty-text {
     font-size: 16px;
   }
 
-  .favorite__empty-button {
+  .cart__empty-button {
     font-size: 17px;
     padding: 14px;
   }
